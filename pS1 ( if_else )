@@ -1,0 +1,26 @@
+<?php
+function finalGrade ($marks , $projects) {
+    if ($marks > 95 || $projects >20){
+        echo "Grade: A+";
+    }
+    else if ($marks > 90 && $projects > 10) {
+        echo "Grade: A";
+    }
+    else if ($marks > 85 && $projects > 5) {
+        echo "Grade: B+";
+    }
+    else if ($marks > 80 && $projects > 3) {
+        echo "Grade: B";
+    }
+    else if ($marks > 75 && $projects > 1) {
+        echo "Grade: C+";
+    }
+    else{ 
+        echo "fail";
+    }
+}
+echo finalGrade(90, 10). "<br>";
+echo finalGrade(70, 21). "<br>";
+echo finalGrade(90, 10). "<br>";
+
+?>
